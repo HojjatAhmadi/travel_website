@@ -1,0 +1,249 @@
+.container-website{
+    width: 100% !important;
+    background-color: #292d33;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+header{
+    min-height: 150vh;
+    color: white;
+    padding:50px 100px;
+}
+
+nav{
+    height: max-content;
+}
+
+nav div{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    transform: translateY(-50px);
+}
+
+nav div a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: 500ms;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+nav div a:hover{
+    color: #f04a0e;
+}
+
+nav div img{
+    width: 80px;
+}
+
+.header-photo div img{
+    width: 300px;
+}
+
+.header-photo ul li{
+    font-size: 1.2rem;
+}
+
+.landding-container{
+    min-height: 100vh;
+    background-color: white;
+}
+
+.landding-container>div{
+    padding:100px 100px;
+}
+
+.btn41-43 {
+    padding: 10px 50px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-41 {
+    border: 2px solid black;
+    z-index: 1;
+    color: white;
+    background-color: black;
+}
+
+.btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+    color: black;    
+}
+
+.btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-41:active {
+    top: 2px;
+}
+
+.secret-nature .right-side{
+    background-image: url(/Images/shape-1.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.secret-nature .left-side{
+    width: 30%;
+}
+
+.secret-nature .right-side{
+    width: 70%;
+}
+
+.uniq-travel , .secret-nature{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.uniq-travel>div{
+    min-height: 50vh;
+}
+
+.uniq-travel .right-side{
+    background-image: url(/Images/shape-2.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.travel-ticket{
+    min-height: 80vh;
+    background-image: url(/Images/mountain-bg.jpg);
+    background-size: cover;
+}
+
+.tour-ticket{
+    min-height: 80vh;
+    background-image: url(/Images/mountain-bg-3.jpg);
+    background-size: cover;
+}
+
+.ticket-show , .tour-show{
+    width: 350px;
+    height: var(--h);
+    border: none ;
+    border-radius: 0 ;
+    background-color: white;
+    color: white;
+}
+
+.head-ticket , .head-tour{
+    height: 350px;
+}
+
+.ticket-show img , .tour-ticket img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.body-ticket , .body-tour{
+    min-height: 50vh;
+    padding: 50px;
+}
+
+.travel-deal .background{
+    position: absolute;
+    width: 80%;
+    transform: translateY(90px);
+}
+
+.travel-deal-show{
+    /* width: 1200px; */
+    min-height: 800px;
+    z-index: 5;
+}
+
+.travel-deal-show div{
+    width: 400px;
+    height: 800px;
+}
+
+.body-deal{
+    background-color: #e5e5e5;
+}
+
+.body-deal img{
+    width: 100px;
+}
+
+.introductions-website{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.586) , rgba(0, 0, 0, 0.574)) , url(/Images/tree-wallpaper.jpg) ;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.introduction{
+    min-height: 90vh;
+    background-color: white;
+}
+
+.introduction div a img{
+    width: 50px;
+}
+
+footer{
+    min-height: 30vh;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    *{
+        transform: translateX(0) translateY(0);
+    }
+    .landding-container>div{
+        flex-direction: column !important;
+    }
+    .left-side , .right-side{
+        width: 100% !important;
+        min-height:50vh ;
+    }
+    .left-side p , .right-side p{
+        width: 90% !important;
+    } 
+    .introduction{
+        flex-direction: column !important;
+    }
+    .introduction>div{
+        width: 100%;
+    }
+    .header-text{
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .header-text p {
+        width: 90% !important;
+    }
+}
